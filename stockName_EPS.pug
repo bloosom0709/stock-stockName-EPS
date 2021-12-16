@@ -1,0 +1,132 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+  title 股基!股基!
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Oswald:300,400,700')
+  link(rel='stylesheet' href='./style.css')
+  link(rel='stylesheet' href='./stockName_EPS.css')
+
+  link(rel='stylesheet' href='https://unpkg.com/aos@next/dist/aos.css')
+
+head
+  
+script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js' integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo' crossorigin='anonymous')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js' integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1' crossorigin='anonymous')
+script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js' integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM' crossorigin='anonymous')
+
+script(src='https://unpkg.com/aos@next/dist/aos.js')
+
+
+
+
+
+
+//- 學習導引
+.bar_box1.at_top
+  .step
+    a(href="https://bloosom0709.github.io/stock-strategy-1/") 
+      .step_h3.step1 1
+      p.bar_p1 投資策略
+  .step_space.step_space1
+  .step
+    a(href="#section_step2") 
+      .step_h3.step2 2
+      p.bar_p2 股票名詞
+  .step_space.step_space2
+  .step
+    a(href="https://bloosom0709.github.io/stock-game/") 
+      .step_h3.step3 3
+      p.bar_p3 策略契合度
+.container
+  .unit_box(data-aos="fade-zoom-in" data-aos-easing="ease-in-back" data-aos-delay="100" data-aos-offset="0")
+    .svg_triangle
+      svg(width='25' height='25' viewbox='-10 -10 40 40')
+        polygon.triangle( points='10,0 0,20 20,20') 
+    a(href="https://bloosom0709.github.io/stock-stockName-EPS/") 
+      .unit_h3.unit_select 股本、EPS
+    a(href="https://bloosom0709.github.io/stock-stockName-PER/") 
+      .unit_h3 殖利率、本益比
+    a(href="https://bloosom0709.github.io/stock-stockName-ROA/") 
+      .unit_h3 ROA、ROE
+    a(href="https://bloosom0709.github.io/stock-stockName-MA/") 
+      .unit_h3 均線
+    a(href="https://bloosom0709.github.io/stock-stockName-Kline/") 
+      .unit_h3 K線
+      
+//- 長短期
+
+section#section_step2
+.container.intro1.Pagination 
+  img.intro_decorate(src="https://i.imgur.com/DbzS96p.png", alt="")
+  img.intro_decorate.decorate_bottom(src="https://i.imgur.com/C1TbtTv.png", alt="")     
+  .row
+    .col-sm-0.col-md-4.col-lg-6.order_1
+      .row 
+        .Text.Text_short(style="transform:rotate(-5deg);").col-sm-12.col-md-12.col-lg-12(data-aos="fade-up" data-aos-duration="1500")
+          p.step_blue step2
+          p.title.Title2 股票名詞
+          p.contain_pink 
+            |內容 | 股本、EPS、殖利率、本益比、
+            | ROA、ROE、均線、K線
+          p.contain2
+            |了解自己適合的投資策略後，第二步要學習常見的股票名詞有哪些 ? 
+            |哪些公式能快速的初步判斷股票的好壞 ? 這章節都會跟你說!
+          
+    .col-sm-12.col-md-8.col-lg-6.img_LS.order_2(data-aos="fade-left") 
+      .img_1
+        img(src='https://i.imgur.com/lYV3bwY.png' alt='')
+          
+.container.intro1.strategy1  
+  .row
+    .col-sm-12.col-md-8.col-lg-6.img_LS(data-aos="fade-right")  
+      .img_1
+        img(src='https://i.imgur.com/JE1Lo5y.png' alt='')
+    .col-sm-0.col-md-4.col-lg-6
+      .row 
+        .Text.Text_long(style="transform:rotate(5deg);").col-sm-12.col-md-12.col-lg-12(data-aos="fade-up" data-aos-duration="1500")
+          p.title.Title1 股本、EPS
+          p.contain1
+            |股本跟公司的關係是甚麼?
+            br
+            |EPS第一次聽到好像很厲害(?
+            
+          
+        .col-sm-12.col-md-12.col-lg-12.img_LS
+          img(src='https://i.imgur.com/Q2PQPPd.png' alt='') 
+.container.video   
+    .row 
+        .col-sm-12.col-md-12.col-lg-12.videobox
+            iframe(frameborder='0' src='https://www.youtube.com/embed/SORD03t7nlo' allowfullscreen='true')
+
+.container.Footer 
+    .row
+      a(href="https://bloosom0709.github.io/stock-index/")
+        img(src="https://i.imgur.com/UN3wUWc.png")
+
+.container.nextPage 
+
+    .page_button
+      a(href="https://bloosom0709.github.io/stock-strategy-1/")  
+        img.page_img1(src="https://i.imgur.com/QWB3NDJ.png", alt="") 
+        .page_h3.page1 1
+        p 投資策略
+    
+    .page_button
+      a(href="https://bloosom0709.github.io/stock-stockName-PER/")         
+         .page_h3.page2 2-2
+         p 本益比、殖利率
+         img.page_img2(src="https://i.imgur.com/T5NzjQj.png", alt="") 
+
+
+
+
+// partial
+script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js')
+script(src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.js')
+//- script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js')
+script(src='./script.js')
+script.
+  AOS.init();
